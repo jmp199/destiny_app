@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - 215_assign7</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div id="destiny-app">
+  <div v-for="item in cards">
+<div class="card" v-bind:class="item.color">
+<div class="img">
+        <img v-bind:src="item.img"/>
+  </div>
+    <div class="health ">{{item.health}}</div>
+  <div class="rarity rare" v-bind:class="item.rarity">{{item.rarity}}</div>
+    
+  
+  
+    <div class="name ">{{item.name}}</div>
+  <div class="affl" v-bind:class="item.affl">{{item.affl}}</div>
+    
+  </div>
+    </div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/vue/2.6.11/vue.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
